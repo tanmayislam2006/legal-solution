@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/0a66543886.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -171,7 +172,9 @@
                 </div>
                 <div class="navbar-end">
                     <a class="btn bg-primary text-white font-bold border-0">Free Consultation</a>
-                    <img src="./images/Animation - 1738080938312.gif" alt="" class="w-[60px] h-[46px]">
+                    <dotlottie-player src="https://lottie.host/0a50360c-d57f-4a8f-a83c-1ab6aa0d453c/TiqOTMq13O.lottie"
+                        background="transparent" speed="1" style="width: 50px; height: 50px" loop
+                        autoplay></dotlottie-player>
                 </div>
             </div>
         </nav>
@@ -329,6 +332,91 @@
                 <!-- content 2 image  -->
                 <div class"">
                     <img src="./images/faq.png" alt="" class=" ">
+                </div>
+            </div>
+        </section>
+        <!-- contact with us section  -->
+        <section class="my-28 space-y-5">
+            <!-- text content -->
+            <div class="">
+                <h2 class="font-bold text-2xl text-center my-3">Contact With Us</h2>
+                <p class="max-w-2xl text-center mx-auto my-3 text-sm">There are many variations of passages of Lorem
+                    Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- caard content  -->
+            <div class="grid lg:grid-cols-2 mx-auto lg:m-5 my-3 gap-2">
+                <!-- card content -1  -->
+                <div class=" grid grid-cols-2 m-4">
+                    <!-- card-1  -->
+                    <div class="border-r border-b border-[#E7E7E7] space-y-8 ">
+                        <!-- image  -->
+                        <div class="my-2"><img src="./images/location.png" alt="" class="mx-auto"></div>
+                        <!-- text  -->
+                        <div class="mx-auto">
+                            <h3 class="text-lg font-semibold text-center my-2">Address</h3>
+                            <p class="text-sm text-[#707070] text-center my-2">A108 Adam Street, <br>
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <!-- card-1  -->
+                    <div class="border-r border-b border-[#E7E7E7] space-y-8 ">
+                        <!-- image  -->
+                        <div class="my-2"><img src="./images/location.png" alt="" class="mx-auto"></div>
+                        <!-- text  -->
+                        <div class="mx-auto">
+                            <h3 class="text-lg font-semibold text-center my-2">Address</h3>
+                            <p class="text-sm text-[#707070] text-center my-2">A108 Adam Street, <br>
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <!-- card-1  -->
+                    <div class="border-r border-b border-[#E7E7E7] space-y-8 ">
+                        <!-- image  -->
+                        <div class="my-2"><img src="./images/location.png" alt="" class="mx-auto"></div>
+                        <!-- text  -->
+                        <div class="mx-auto">
+                            <h3 class="text-lg font-semibold text-center my-2">Address</h3>
+                            <p class="text-sm text-[#707070] text-center my-2">A108 Adam Street, <br>
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                    <!-- card-1  -->
+                    <div class="border-r border-b border-[#E7E7E7] space-y-8 ">
+                        <!-- image  -->
+                        <div class="my-2"><img src="./images/location.png" alt="" class="mx-auto"></div>
+                        <!-- text  -->
+                        <div class="mx-auto">
+                            <h3 class="text-lg font-semibold text-center my-2">Address</h3>
+                            <p class="text-sm text-[#707070] text-center my-2">A108 Adam Street, <br>
+                                New York, NY 535022</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card content 2 -->
+                <div class=" space-y-7">
+                    <!-- input 1 -->
+                    <div class="mx-10">
+                        <input type="text" placeholder="Your Name"
+                            class="input input-bordered border-0 bg-[#F3F3F3] w-full">
+                    </div>
+                    <!-- input 2 -->
+                    <div class="mx-10">
+                        <input type="email" placeholder="Your Email"
+                            class="input input-bordered border-0 bg-[#F3F3F3] w-full">
+                    </div>
+                    <!-- input 3 -->
+                    <div class="mx-10">
+                        <input type="text" placeholder="Your Subject"
+                            class="input input-bordered border-0 bg-[#F3F3F3] w-full">
+                    </div>
+                    <!-- input 4 -->
+                    <div class="mx-10">
+                        <input type="text" placeholder="Your Text"
+                            class="input input-bordered border-0 bg-[#F3F3F3] w-full h-[150px] ">
+                    </div>
+                    <div class="px-10 lg:w-full ">
+                        <button class="btn bg-primary text-white border-0 font-bold lg:w-full ">Submit</button>
+                    </div>
                 </div>
             </div>
         </section>
