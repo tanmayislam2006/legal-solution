@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -26,6 +26,12 @@
                     },
                     fontFamily: {
                         font: ['EB Garamond', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero': "url('./images/banner.png')",
+                        'slide-1': "url('./images/slider-1.jpg')",
+                        'slide-2': "url('./images/slider-2.jpg')",
+                        'slide-3': "url('./images/slider-3.jpg')",
                     },
                 }
             }
@@ -173,18 +179,18 @@
                 <div class="navbar-end">
                     <a class="btn bg-primary text-white font-bold border-0">Free Consultation</a>
                     <dotlottie-player src="https://lottie.host/0a50360c-d57f-4a8f-a83c-1ab6aa0d453c/TiqOTMq13O.lottie"
-                        background="transparent" speed="1" style="width: 50px; height: 50px" loop
-                        autoplay></dotlottie-player>
+                        background="transparent" speed="1" style="width: 50px; height: 50px" class="hidden md:inline"
+                        loop autoplay></dotlottie-player>
                 </div>
             </div>
         </nav>
-        <section class="bg-[url(./images/banner.png)] h-[600px] bg-cover bg-no-repeat container  ">
+        <section class="container px-10 my-28  ">
             <!-- section content -->
-            <div class="">
-                <p class="max-w-xl text-center pt-72 mx-auto text-white">There are many variations of passages of Lorem
+            <div class="bg-hero bg-cover bg-center bg-center rounded-xl  ">
+                <p class="max-w-xl text-center pt-56 mx-auto text-white">There are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 <!-- input type field  -->
-                <div class="flex max-w-xl mx-auto gap-2 my-5 p-4">
+                <div class="flex max-w-xl mx-auto gap-2 my-5 p-4 items-center">
                     <div class="flex-grow">
                         <input type="text" placeholder="Search" class="input input-bordered w-full" />
                     </div>
@@ -298,6 +304,89 @@
             </div>
             </div>
 
+        </section>
+        <!-- our client section  -->
+        <section class="my-28  container px-10">
+            <!-- text content -->
+            <div class="">
+                <h2 class="font-bold text-2xl text-center my-3">The Legal Practice Area</h2>
+                <p class="max-w-2xl text-center mx-auto my-3 text-sm">There are many variations of passages of Lorem
+                    Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="carousel w-full my-5 mx-5">
+                <!-- slide one  -->
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-slide-1 text-white bg-cover bg-center bg-center rounded-md">
+                    <!-- silde content -->
+                    <div class="mx-auto">
+                        <div class="avatar flex justify-center py-10  ">
+                            <div class="w-24 rounded-full mx-auto">
+                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                                    class="mx-auto">
+                            </div>
+                        </div>
+                        <h3 class="mx-auto text-xl font-semibold text-center">Awlad Hosain</h3>
+                        <p class="mx-auto text-lg text-center">UIX Designer</p>
+                        <p class="mx-auto text-center my-32 max-w-[800px] ">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❯</a>
+                    </div>
+                </div>
+                <!-- slide two  -->
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-slide-2 text-white bg-cover bg-center bg-center rounded-md">
+                    <!-- silde content -->
+                    <div class="mx-auto">
+                        <div class="avatar flex justify-center py-10  ">
+                            <div class="w-24 rounded-full mx-auto">
+                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                                    class="mx-auto">
+                            </div>
+                        </div>
+                        <h3 class="mx-auto text-xl font-semibold text-center">Awlad Hosain</h3>
+                        <p class="mx-auto text-lg text-center">UIX Designer</p>
+                        <p class="mx-auto text-center my-32 max-w-[800px] ">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❯</a>
+                    </div>
+                </div>
+                <!-- slide three  -->
+                <div id="slide3"
+                    class="carousel-item relative w-full bg-slide-3 text-white bg-cover bg-center bg-center rounded-md">
+                    <!-- silde content -->
+                    <div class="mx-auto">
+                        <div class="avatar flex justify-center py-10  ">
+                            <div class="w-24 rounded-full mx-auto">
+                                <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                                    class="mx-auto">
+                            </div>
+                        </div>
+                        <h3 class="mx-auto text-xl font-semibold text-center">Awlad Hosain</h3>
+                        <p class="mx-auto text-lg text-center">UIX Designer</p>
+                        <p class="mx-auto text-center my-32 max-w-[800px] ">Contrary to popular belief, Lorem Ipsum is
+                            not simply random text. It has roots in a piece of classical Latin literature from 45 BC,
+                            making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+                            College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-white bg-primary font-bold border-0 text-3xl">❯</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- FAQ QUESTION -->
         <section class="mt-28">
@@ -427,7 +516,8 @@
                 <div class=" w-12 h-12"><img src="./images/business.png" alt="" class=""></div>
                 <h3 class="font-bold text-2xl">Justice</h3>
             </div>
-            <p class="max-w-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <p class="max-w-sm">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour.</p>
         </nav>
         <nav>
             <h6 class="footer-title">Company</h6>
@@ -449,7 +539,8 @@
                     <span class="label-text">Enter your email address</span>
                 </label>
                 <div class="join">
-                    <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
+                    <input type="text" placeholder="username@site.com"
+                        class="input input-bordered join-item text-gray-500" />
                     <button class="btn bg-primary join-item text-white ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6 -rotate-45">
